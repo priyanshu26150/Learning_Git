@@ -1,0 +1,11 @@
+git config --global user.name "<username>"
+
+git config --global user.email "<email_id>"
+
+git config user.name
+
+git status
+
+git init
+
+git add --a   (all files in stageing area)
