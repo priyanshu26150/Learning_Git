@@ -9,3 +9,9 @@ git status
 git init
 
 git add --a   (all files in stageing area)
+
+git add <file name>
+
+git commit -m "<message>"
+
+git log
