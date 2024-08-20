@@ -10,8 +10,60 @@ git init
 
 git add --a   (all files in stageing area)
 
+git add .
+
 git add <file name>
 
 git commit -m "<message>"
 
 git log
+
+git log -p			--- show the changes along with log
+
+git log -p -<no. of log to show>
+
+git log --stat
+
+git log --pretty=oneline
+
+git log --pretty=short
+
+git log --pretty=full
+
+git log --pretty=format: "%h -- %a"
+
+git log --since=2.days			--- week
+
+git clone "repo url"
+
+git clone "repo url" <folder name?
+
+touch .gitignore  (create a .gitignore file)   ---  	1. Write the file name in the .gitignore file
+							2. *.<file extension>   --- ignore the file type
+							3. <folder name>/   --- ignore all directory with name given
+							4. /<folder name>/   --- ignore only outer directory with name given
+
+git diff      					 ---  compares staged file and change made to staged file
+
+git diff --staged				--- compares staged file (not committed) with the previous commit
+
+git commit -a -m "<message>"			--- skip stage state and directly commit (only tracked files).  git add is used to stage
+
+git rm <file name>			--- Delete or remove the file and stage it.
+
+git mv <old name> <new name>		--- Rename the file and stage it.
+
+git rm --cached <file name>		--- to untrack and ignore a committed file. Also write the file name in the .gitignore
+
+git restore <filename>			--- Unstage the file
+
+git checkout -- <file name>		--- revert the changes in the file
+
+git checkout -f				--- revert all changes
+
+git remote add origin <GitHub repo url>				--- git remote add [alias] [url]
+git branch -M main
+git push -u origin main						--- git push [alias] [branch]
+
+rm -rf .git   (To delete the repository)
+
